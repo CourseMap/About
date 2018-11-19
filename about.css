@@ -12,19 +12,17 @@
 
 .logo{
     display: grid;
-    background-image: url(./src/photo/logo.png); */
+    background-image: url(./src/photo/logo.png);
     background-color: #E8FFFF;
-    background-color: #DEFFFF;
     background-size: auto 350px;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: 50% 62%;
 }
 
 .use{
     display: grid;
     background-image: url(./src/photo/use.png);
     background-color: #F5E8FF;
-    /* background-color: #F1DEFF; */
     background-size: auto 350px;
     background-repeat: no-repeat;
     background-position: 10% 50%;
@@ -37,14 +35,14 @@
     background-size: auto 350px;
     background-repeat: no-repeat;
     background-position: 90% 50%;
-    /* background-color: #FFDEDE; */
 }
 
 body{
-    margin: 0px;
+    margin: 0;
+    padding: 0;
     background-image: linear-gradient(to bottom right , #d7fdea 50%, #fdd8d7 50%);
     background-repeat: no-repeat;
-    background-size: auto 580px;
+    background-size: auto 670px;
     background-position: bottom;
 }
 
@@ -56,19 +54,44 @@ body{
     /* background-image: linear-gradient(to bottom right , #d7fdea 50%, #fdd8d7 50%); */
 /* } */
 
-#nav{
+.nav ul{
     list-style: none;
-    margin: 0;
+    /* margin-left: 85%; */
+    /* margin-top: 0; */
     padding: 0;
-    border: 0;
-    line-height: 1;
-    display: block;
+    margin: 0;
+    /* border: 0; */
+    /* line-height: 1; */
+    /* display: block; */
     /* position: fixed; */
+    /* background-color: #FFF7E8; */
+    /* background-color: #CCCCFF; */
+    background-color: rgb(41, 23, 27);
     text-align: right;
+    z-index: 100;
 }
 
-#nav li{
+.nav li{
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    line-height: 30px;
     display: inline-block;
+    /* border-bottom: 1px solid #888; */
+}
+
+.nav a{
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    transition: .3s background-color;
+}
+
+.nav .Home{
+    margin-right: 1%;
+}
+
+.nav .About{
+    margin-right: 3%;
 }
 
 .logo{
@@ -122,6 +145,7 @@ body{
 }
 
 .container{
+    height: 580px;
     margin: 7.6vh;
     position: relative;
     display: grid;
